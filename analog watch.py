@@ -2,6 +2,7 @@ import tkinter as tk
 from math import cos, sin, pi
 import time
 
+
 class AnalogClock(tk.Tk):
     def __init__(self):
         super().__init__()
@@ -30,7 +31,8 @@ class AnalogClock(tk.Tk):
             # Adding numbers
             x_text = 200 + 170 * cos(angle)
             y_text = 200 + 170 * sin(angle)
-            self.canvas.create_text(x_text, y_text, text=str(i+1), fill="black", font=("Arial", 12, "bold"))
+            # Shift numbering by 4 positions
+            self.canvas.create_text(x_text, y_text, text=str((i+2)%12 + 1), fill="black", font=("Arial", 12, "bold"))
 
         # Create minute and second ticks
         for i in range(60):
