@@ -18,4 +18,4 @@ Analog Clock is a simple Python application built using the Tkinter library that
 
 ## Screenshots
 
-![Analog Clock Screenshot](screenshot.jpg)
+![Analog Clock Screenshot](watch.png)
